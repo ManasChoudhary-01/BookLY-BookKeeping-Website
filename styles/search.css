@@ -28,7 +28,7 @@ body {
     padding-top: 14vh;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(0deg, rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0.5)), url(/images/search.jpg);
+    background-image: linear-gradient(0deg, rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0.5)), url(../images/search.jpg);
     background-size: cover;
     background-position: top;
     color: white;
