@@ -117,7 +117,7 @@ section {
 
 .Home {
   position: relative;
-  background-image: url(/images/background/back-img1.jpg);
+  background-image: url('../images/background/back-img1.jpg');
   height: fit-content;
   width: 100%;
   display: flex;
@@ -209,23 +209,23 @@ section {
 
 @keyframes books {
   0% {
-    background-image: url(/images/books/book-1.jpg);
+    background-image: url('../images/books/book-1.jpg');
   }
 
   25% {
-    background-image: url(/images/books/book-2.jpg);
+    background-image: url('../images/books/book-2.jpg');
   }
 
   50% {
-    background-image: url(/images/books/book-3.jpg);
+    background-image: url('../images/books/book-3.jpg');
   }
 
   75% {
-    background-image: url(/images/books/book-4.jpg);
+    background-image: url('../images/books/book-4.jpg');
   }
 
   100% {
-    background-image: url(/images/books/book-5.jpg);
+    background-image: url('../images/books/book-5.jpg');
   }
 }
 
@@ -369,7 +369,7 @@ section {
   margin-top: 8rem;
   height: 60vh;
   width: 100%;
-  background-image: url(/images/subscribe.jpg);
+  background-image: url('../images/subscribe.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
