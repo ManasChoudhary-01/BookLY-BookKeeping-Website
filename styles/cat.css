@@ -1,0 +1,164 @@
+/* IMPORTING GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FAF7F9;
+}
+
+/* CUSTOM SCROLLBAR  */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#642BFF, #FF22E6);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #D1E5FF;
+}
+
+.book-series {
+    height: fit-content;
+    width: 100%;
+    background-color: #FAF7F9;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.med3 {
+    font-family: 'Poppins:wght@400', sans-serif;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content-4 {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.content-5 {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.med4 {
+    position: relative;
+    font-family: 'Oswald:wght@400', sans-serif;
+    font-size: 2vw;
+    color: #000;
+    cursor: pointer;
+}
+
+.active1 {
+    color: #14A1E8;
+}
+
+.work {
+    margin: 5vh 0 14vh 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3vw;
+    justify-content: center;
+    min-height: 40vh;
+}
+
+.book-imgs {
+    height: 35rem;
+    width: 25rem;
+}
+.book-imgs:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.book-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    text-align: center;
+
+}
+
+.book-titles {
+    font-family: 'Poppins:wght@400', sans-serif;
+    font-size: 2.5rem;
+    color: #001625;
+    font-weight: bold;
+}
+
+.book-authors {
+    font-family: 'Poppins:wght@200', sans-serif;
+    font-size: 1.6rem;
+    color: #14A1E8;
+}
+
+.book-seriess {
+    margin-top: 1.4vh;
+    font-family: 'Poppins:wght@200', sans-serif;
+    font-size: 1.6rem;
+    color: red;
+}
+
+.book-types {
+    margin-top: 1.4vh;
+    color: green;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+#fav-btns {
+    margin-top: 2vh;
+    color: #fff;
+    background: #14A1E8;
+    padding: 10px 20px;
+    width: fit-content;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#fav-btns:hover {
+    box-shadow: 0 0 1.5rem #14A1E8;
+}
+
+.book-category {
+    height: fit-content;
+    width: 100%;
+    background-color: #FAF7F9;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.book-writers {
+    height: fit-content;
+    width: 100%;
+    background-color: #FAF7F9;
+    display: flex;
+    flex-direction: column;
+
+}
+

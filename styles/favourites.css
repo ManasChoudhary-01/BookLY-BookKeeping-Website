@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: fit-content;
+    padding-top: 22vh;
+    padding-bottom: 5vh;
+}
+
+.med3 {
+    font-family: 'Poppins:wght@400', sans-serif;
+    font-size: 2.6rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+}
+
+.fav-books {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.book-container {
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    margin-bottom: 6vh;
+    
+}
+
+.book-container img {
+    height: 35rem;
+    width: 30rem;
+
+}
+
+.book-container img:hover {
+    box-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+.book-container button {
+    margin-top: 2vh;
+    color: #fff;
+    background: #14A1E8;
+    padding: 10px 30px;
+    width: fit-content;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.book-container button:hover {
+    box-shadow: 0 0 1.5rem #14A1E8;
+}
+
+.book-title-f {
+    font-family: 'Poppins:wght@400', sans-serif;
+    font-size: 2.2rem;
+    color: #001625;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+}
+
+.book-author-f {
+    font-family: 'Poppins:wght@200', sans-serif;
+    font-size: 1.6rem;
+    color: #14A1E8;
+    text-align: center;
+}
+
+.book-series-f {
+    margin-top: 1.4vh;
+    font-family: 'Poppins:wght@200', sans-serif;
+    font-size: 1.6rem;
+    color: red;
+    text-align: center;
+}
+
+.book-type-f {
+    margin-top: 1.4vh;
+    color: green;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+

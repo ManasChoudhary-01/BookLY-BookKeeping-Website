@@ -1,0 +1,624 @@
+/* IMPORTING GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* CUSTOM SCROLLBAR  */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642BFF, #FF22E6);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:#D1E5FF;
+}
+
+
+/* HEADER CSS STARTS */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 6vw;
+  z-index: 99;
+  background-color: #001625;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+  gap: 2rem;
+
+}
+
+.logo-first {
+  font-weight: bold;
+  color: #14A1E8;
+}
+
+.logo-second {
+  color: #fff;
+}
+
+header #menu {
+  display: none;
+}
+
+nav a {
+  position: relative;
+  font-family: 'Raleway:wght@200', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.6rem;
+  margin-left: 3vw;
+  transition: 0.2s;
+}
+
+nav a:hover,
+nav .active {
+  color: #14A1E8;
+}
+
+nav a:after {
+  content: "";
+  position: absolute;
+  background-color: #14A1E8;
+  left: 0;
+  height: 3.1px;
+  width: 0%;
+  border-radius: 2px;
+  bottom: -14px;
+  transition: 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 70%;
+  transition: width 0.5s ease-in-out;
+}
+
+nav .active:after {
+  width: 70%;
+  transition: width 0.5s ease-in-out;
+}
+
+/* HEADER CSS ENDS */
+
+/* MAIN CSS STARTS */
+
+section {
+  background-color: #FAF9F7;
+  padding: 0 4%;
+}
+
+/* HOME PAGE CSS */
+
+.Home {
+  position: relative;
+  background-image: url(/images/background/back-img1.jpg);
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+}
+
+.Home .content-1 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-top: 16vh;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.social-media a {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  color: #14A1E8;
+  border: 2.6px solid #14A1E8;
+  backdrop-filter: blur(15px);
+}
+
+.social-media a i {
+  font-size: 3rem;
+  padding-top: 0.8rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+.social-media a:hover {
+  color: #fff;
+  background-color: #14A1E8;
+  box-shadow: 0 0 1.5rem #14A1E8;
+  transform: scale(1.2);
+}
+
+.med1 {
+  padding-left: 4vw;
+  width: 50vw;
+  text-align: start;
+  font-family: 'Poppins:wght@400', sans-serif;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.med1 p {
+  font-size: 1.8rem;
+  padding-top: 5vh;
+}
+
+#btn1 {
+  margin-top: 8vh;
+  color: #fff;
+  width: 18rem;
+  height: 5.1rem;
+  border: 3px solid #14A1E8;
+  background-color: #14A1E8;
+  font-size: 2.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+#btn1:hover {
+  box-shadow: 0 0 1.5rem #14A1E8;
+  transform: scale3d(1.2, 1.2, 2);
+}
+
+.book {
+  height: 40rem;
+  width: 27rem;
+  background-size: 100% 100%;
+  transform: translate3d(-4vw, 7vh, 0);
+  border-radius: 1.7vw;
+  animation: books 12.5s ease-in-out infinite;
+
+}
+
+@keyframes books {
+  0% {
+    background-image: url(/images/books/book-1.jpg);
+  }
+
+  25% {
+    background-image: url(/images/books/book-2.jpg);
+  }
+
+  50% {
+    background-image: url(/images/books/book-3.jpg);
+  }
+
+  75% {
+    background-image: url(/images/books/book-4.jpg);
+  }
+
+  100% {
+    background-image: url(/images/books/book-5.jpg);
+  }
+}
+
+/* HOME PAGE CSS ENDS */
+
+/* ARRIVAL PAGE CSS STARTS  */
+
+.Arrival {
+  height: fit-content;
+  width: 100%;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.med2 {
+  font-family: 'Poppins:wght@400', sans-serif;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+}
+
+.content2 {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7vw;
+
+}
+
+.card {
+  height: 40rem;
+  width: auto;
+  border-radius: 10px;
+  border: 2px solid #001625;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 7px;
+}
+
+.card-body {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #1f3d4738;
+  backdrop-filter: blur(4px);
+  border-radius: 7px;
+  transition: 1.5s;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-title {
+  font-weight: bold;
+  color: #14A1E8;
+  font-size: 30px;
+  font-family: 'Poppins:wght@400', sans-serif;
+  text-align: center;
+}
+
+.book-author {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Poppins:wght@200', sans-serif;
+}
+
+.book-series {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Poppins:wght@200', sans-serif;
+  padding-top: 20px;
+
+}
+
+.book-summary {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 30px 10px;
+  font-family: 'Poppins:wght@200', sans-serif;
+  text-align: center;
+}
+
+#fav-btn {
+  color: #fff;
+  background: #14A1E8;
+  padding: 10px 20px;
+  width: fit-content;
+  border: none;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#fav-btn:hover {
+  background-color: transparent;
+  border: 2px solid #14A1E8;
+}
+
+.card:hover .card-body {
+  right: 0;
+}
+
+/* ARRIVAL PAGE CSS ENDS  */
+
+/* BESTSELLER PAGE CSS STARTS  */
+
+.Bestseller {
+  height: fit-content;
+  width: 100%;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+/* BESTSELLER PAGE CSS ENDS  */
+
+/* SUBSCRIBE PAGE CSS STARTS  */
+
+.subscribe {
+  margin-top: 8rem;
+  height: 60vh;
+  width: 100%;
+  background-image: url(/images/subscribe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  padding-top: 8vw;
+  right: 6vw;
+}
+
+form h3 {
+  color: #fff;
+  font-size: 2.9rem;
+  font-family: 'Poppins:wght@200', sans-serif;
+
+}
+
+form input {
+  height: 4.4rem;
+  width: 47rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  padding-left: 2vw;
+}
+
+form input:focus {
+  padding-left: 2vw;
+  color: #14A1E8;
+
+}
+
+#subscr-btn {
+  height: 4rem;
+  font-size: 2.4rem;
+  color: #fff;
+  background-color: #14A1E8;
+  width: 17rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+#subscr-btn:hover {
+  box-shadow: 0 0 1.5rem #14A1E8;
+  transform: scale3d(1.2, 1.2, 2);
+}
+
+/* SUBSCRIBE PAGE CSS ENDS  */
+
+/* MAINS CSS ENDS */
+
+/* FOOTER CSS STARTS */
+
+footer {
+  background-color: #00263E;
+  height: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Raleway";
+  font-weight: 500;
+
+}
+
+/* FOOTER CSS ENDS */
+
+/* RESPONSIVE CSS  */
+
+@media(max-width:1000px) {
+
+  html {
+    font-size: 61%;
+  }
+
+  footer {
+    height: 12vh;
+  }
+
+  .subscribe {
+    margin-top: 4vw;
+
+  }
+
+  form {
+    height: fit-content;
+  }
+}
+
+@media(max-width:980px) {
+
+  header #menu {
+    display: block;
+    color: #14A1E8;
+    font-size: 6vw;
+  }
+
+  header nav {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #002E4B;
+    width: fit-content;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: hamburger 1s linear;
+  }
+
+  header .active {
+    display: block;
+  }
+
+  header nav a {
+    display: block;
+    margin: 1rem 3rem;
+    font-size: 2rem;
+  }
+
+  @keyframes hamburger {
+
+    0%{
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+  }
+
+
+
+  nav a:hover::after {
+    width: 0%;
+  }
+
+  nav .active:after {
+    width: 0%;
+  }
+
+  .Home {
+    flex-direction: column;
+
+  }
+
+  .med1 {
+    padding-left: 5vw;
+    width: 100%;
+  }
+
+  .med1 p {
+    padding-top: 5vh;
+  }
+
+  #btn1 {
+    margin-top: 4vh;
+  }
+
+  .book {
+    height: 45rem;
+    width: 32rem;
+  }
+
+  .med2 {
+    font-size: 4.6rem;
+  }
+
+  .card {
+    height: 45rem;
+  }
+}
+
+@media(max-width:800px) {
+
+  form {
+    padding-top: 4rem;
+    gap: 2rem;
+  }
+
+  html {
+    font-size: 59%;
+  }
+  .logo {
+    font-size: 3.8rem;
+  }
+}
+
+@media(max-width:600px) {
+
+  html {
+    font-size: 57%;
+  }
+}
+
+@media(max-width:500px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  form h3 {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+
+  form input {
+    height: 3.3rem;
+    width: 90%;
+    font-size: 1.6rem;
+  }
+
+  #subscr-btn {
+    height: 3.4rem;
+    font-size: 2rem;
+    width: 14rem;
+  }
+
+  .subscribe {
+    height: 48vh;
+  }
+
+  footer p {
+    font-size: 2rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width:350px) {
+
+  .subscribe {
+    height: 55vh;
+  }
+
+}
