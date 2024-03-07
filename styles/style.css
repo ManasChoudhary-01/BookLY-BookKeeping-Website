@@ -117,7 +117,7 @@ section {
 
 .Home {
   position: relative;
-  background-image: url('../images/background/back-img1.jpg');
+  background-image: url('/images/background/back-img1.jpg');
   height: fit-content;
   width: 100%;
   display: flex;
@@ -369,7 +369,7 @@ section {
   margin-top: 8rem;
   height: 60vh;
   width: 100%;
-  background-image: url('../images/subscribe.jpg');
+  background-image: url('/images/subscribe.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
