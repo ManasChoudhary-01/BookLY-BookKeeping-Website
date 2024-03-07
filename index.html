@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookLY</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/loader.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+
+    <!-- Pre loader  -->
+    <div id="loader">
+        <h1>WELCOME</h1>
+        <h1>TO BOOK</h1>
+        <h1>OF WORLD..</h1>
+    </div>
+
+    <header>
+        <div class="logo">
+            <div class="logo-first"><i class="fa-solid fa-book"></i></div>
+            <div class="logo-second">BookLY</div>
+        </div>
+        <i class='bx bx-menu' id="menu" onclick="onClickMenu()"></i>
+        <nav>
+            <a href="#Home" class="active">Home</a>
+            <a href="#Arrival">Arrival</a>
+            <a href="#Bestseller">Bestseller</a>
+            <a href="cat.html">Filter Books</a>
+            <a href="search.html"><i class='bx bx-search'></i></a>
+            <a href="favourites.html"><i class='bx bxs-heart'></i></a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME PAGE  -->
+        <section class="Home" id="Home">
+            <div class="content-1">
+                <div class="social-media">
+                    <a href="https://www.instagram.com" target="main"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://in.pinterest.com" target="main"><i class='bx bxl-pinterest' ></i></a>
+                    <a href="https://www.facebook.com" target="main"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/?lang=en" target="main"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <div class="med1">
+                    <h1>Find your </h1>
+                    <h1>Favourite Book Here</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolorum, amet, aut ipsum,
+                       velit fugit esse quia quasi temporibus odit possimus sit itaque ab nobis et adipisci dolore!
+                       Veniam, beatae!
+                    </p>
+                    <button type="button" id="btn1">Explore</button>
+                </div>
+
+
+            </div>
+            <div class="book"></div>
+        </section>
+
+        <!-- ARRIVAL PAGE  -->
+        <section class="Arrival" id="Arrival">
+            <div class="med2">
+                <h1 style="color: #001625;">New</h1>
+                <h1 style="color: #14A1E8;">Arrival</h1>
+            </div>
+            <div class="content2">
+                <div class="card">
+                    <img src="images/Arrival/book1.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">The Meltdown</div>
+                        <div class="book-author">By Jeff Kinney</div>
+                        <div class="book-series">Series: Diary of a Wimpy Kid</div>
+                        <div class="book-summary">The pressure's really piling up on Greg Heffley. His mom thinks 
+                            video games are turning his brain to mush, so she wants her son to put down the controller
+                             and explore his creative side. As if that's not scary enough, Halloween's just around the 
+                             cor
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Arrival/book2.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">Brightest Night</div>
+                        <div class="book-author">By Tui T. Sutherland</div>
+                        <div class="book-series">Series: Wings of Fire</div>
+                        <div class="book-summary">The dragonets struggle to fulfill the prophecy and -- somehow -- 
+                            end the war in this thrilling new installment of the New York Times bestselling Wings
+                            of Fire series!One will have the power of wings of fire . . . Sunny has always taken the
+                             Dragonet
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Arrival/book3.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">Good Old Timmy</div>
+                        <div class="book-author">By Enid Blyton</div>
+                        <div class="book-series">Series: The Famous Five</div>
+                        <div class="book-summary">Nothing could be more exciting than a daring night flight on Bill's plane! But Philip, Dinah, Lucy-Ann, Jack and Kiki the parrot soon find themselves flying straight into a truly amazing adventure. Who are the two strange pilots, and what is the secret
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Arrival/book4.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">Harry Potter and the Sorcerer's Stone</div>
+                        <div class="book-author">By J. K. Rowling</div>
+                        <div class="book-series">Series: Harry Potter</div>
+                        <div class="book-summary">Harry Potter has never been the star of a Quidditch team, scoring points while riding a broom far above the ground. He knows no spells, has never helped to hatch a dragon, and has never worn a cloak of invisibility.All he knows is a miserable life.
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Arrival/book5.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">The Last Olympian</div>
+                        <div class="book-author"> By Rick Riordan</div>
+                        <div class="book-series">Percy Jackson & The Olympians</div>
+                        <div class="book-summary">All year the half-bloods have been preparing for battle against the Titans, knowing the odds of victory are grim. Kronos's army is stronger than ever, and with every god and half-blood he recruits, the evil Titan's power only grows. 
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Arrival/book6.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">Red Queen</div>
+                        <div class="book-author">By Victoria Aveyard</div>
+                        <div class="book-series">Series: Witch World</div>
+                        <div class="book-summary">Jessie never suspected that witches are real, or that she is one, in the start of this paranormal suspense saga from #1 New York Times bestselling author Christopher Pike. Heading off for a weekend in Las Vegas with her friends, Jessie Ralle has only one worry.
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!-- BESTSELLER PAGE  -->
+        <section class="Bestseller" id="Bestseller">
+            <div class="med2">
+                <h1 style="color: #001625;">All Time</h1>
+                <h1 style="color: #14A1E8;">Bestseller</h1>
+            </div>
+
+            <div class="content2">
+                        
+                <div class="card">
+                    <img src="images/Bestseller/book1.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">The Lost Hero</div>
+                        <div class="book-author">By Rick Riordan</div>
+                        <div class="book-series">Series: The Heroes of Olympus</div>
+                        <div class="book-summary">What he did to end up here, Jason has no idea--except that everything seems very wrong. Piper has a secret. Her father has been missing for three days, and her vivid nightmares reveal that he's in terrible danger.
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Bestseller/book2.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">Rich Dad Poor Dad</div>
+                        <div class="book-author">Robert Kiyosak</div>
+                        <div class="book-series"></div>
+                        <div class="book-summary">Rich Dad Poor Dad, the #1 Personal Finance book of all time, tells the story of Robert Kiyosaki and his two dads--his real father and the father of his best friend, his rich dad--and the ways in which both men shaped his thoughts about money and investing. The book explodes the myth that you need to earn a high income
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Bestseller/book3.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">A Tale of Two Cities</div>
+                        <div class="book-author">By Charles Dickens</div>
+                        <div class="book-series">Series: Oxford Bookworms</div>
+                        <div class="book-summary">A Tale of Two Cities (1859) is a novel by Charles Dickens, set in London and Paris before and during the French Revolution. The novel depicts the plight of the French peasantry demoralized by the French aristocracy in the years leading up to the revolution.
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Bestseller/book4.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">Don Quixote</div>
+                        <div class="book-author">By Miguel de Cervantes</div>
+                        <div class="book-series"></div>
+                        <div class="book-summary">Nominated as one of America's best-loved novels by PBS's The Great American Read Edith Grossman's definitive English translation of the Spanish masterpiece, in an expanded P.S. edition Widely regarded as one of the funniest and most tragic books ever written, Don Quixote chronicles the adventures of the self-created knight-errant.
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Bestseller/book5.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">And Then There Were None</div>
+                        <div class="book-author">By Agatha Christie</div>
+                        <div class="book-series"></div>
+                        <div class="book-summary">Agatha Christie's most famous and acclaimed novel! Ten strangers are brought together on an isolated island where, one by one, they die in a murderous countdown...
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Bestseller/book6.jpeg" class="card-img" alt="">
+                    <div class="card-body">
+                        <div class="book-title">The Hobbit </div>
+                        <div class="book-author">By J. R. R. Tolkien</div>
+                        <div class="book-series">Series: Tolkien Illustrated</div>
+                        <div class="book-summary">The stirring adventure that begins The Lord of the Rings, the greatest fantasy epic of all time When Thorin Oakenshield and his band of dwarves embark upon a dangerous quest to reclaim the hoard of gold stolen from them by the evil dragon Smaug.
+                        </div>
+                        <button type="button" id="fav-btn">Add to favourite</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <div class="subscribe">
+            <form id="myForm" action="https://api.web3forms.com/submit" method="POST"
+            onsubmit="return validateForm()">
+
+                <h3>Subscribe For Latest Update</h3>
+                <input type="hidden" name="access_key" value="d522709c-87b2-4392-898b-f8e36c3d698b">
+                <input type="text" name="Email" placeholder="enter your email" id="email">
+                <input type="submit" id="subscr-btn" value="Subscribe" >
+            </form>
+        </div>
+
+
+
+        
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by BookLY</p>
+    </footer>
+
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

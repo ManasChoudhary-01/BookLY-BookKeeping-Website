@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookLY</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-first"><i class="fa-solid fa-book"></i></div>
+            <div class="logo-second">BookLY</div>
+        </div>
+        <i class='bx bx-menu' id="menu" onclick="onClickMenu()"></i>
+        <nav>
+            <a href="index.html#Home">Home</a>
+            <a href="index.html#Arrival">Arrival</a>
+            <a href="index.html#Bestseller">Bestseller</a>
+            <a href="cat.html">Filter Books</a>
+            <a href="search.html" class="active"><i class='bx bx-search'></i></a>
+            <a href="favourites.html"><i class='bx bxs-heart'></i></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+
+            <h1>Find Your Book of Choice.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque corporis laudantium iste non iure
+                quisquam, quo esse inventore, perferendis quae aliquam voluptates harum ipsum dignissimos voluptas
+                velit voluptatum porro aliquid.
+            </p>
+            <div class="input-container">
+                <input type="text" id="find-book" placeholder="Diary of a wimpy kid">
+                <button type="submit" id="searched-btn"><i class='bx bx-search'></i></button>
+            </div>
+
+        </div>
+
+        <div class="heading">Your Searched Result..</div>
+
+        <div class="searched-books">
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by BookLY</p>
+    </footer>
+    
+    <script src="script/search.js"></script>
+
+</body>
+
+</html>
