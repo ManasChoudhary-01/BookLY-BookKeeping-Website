@@ -551,10 +551,6 @@ footer p {
   .med2 {
     font-size: 4.6rem;
   }
-
-  .card {
-    height: 45rem;
-  }
 }
 
 @media(max-width:800px) {
@@ -576,6 +572,9 @@ footer p {
 
   html {
     font-size: 57%;
+  }
+  #fav-btn {
+    display: none;
   }
 }
 
@@ -612,6 +611,51 @@ footer p {
 
   .logo {
     font-size: 3rem;
+  }
+    .Home {
+    padding-top: 14vh;
+  }
+  .Home .content-1  {
+    padding-top: 4vh;
+  }
+  .med1 {
+    font-size: 2.5rem;
+  }
+  .med1 p{
+    font-size: 1.4rem;
+  }
+  .social-media a {
+    height: 4rem;
+    width: 4rem;
+  }
+  .social-media a i {
+    font-size: 2.5rem;
+    padding-top: 0.5rem;
+  }
+  #btn1 {
+    height: 4.1rem;
+    width: 16rem;
+    font-size: 2rem;
+  }
+  .book {
+    height: 32rem;
+    width: 24rem;
+  }
+  .med2 {
+    font-size: 3rem;
+  }
+  .Arrival {
+    padding-top: 7rem;
+    padding-bottom: 0;
+  }
+  .Bestseller {
+    padding-top: 7rem;
+  }
+  .subscribe {
+    height: 40vh;
+  }
+  header #menu {
+    font-size: 4rem;
   }
 }
 
