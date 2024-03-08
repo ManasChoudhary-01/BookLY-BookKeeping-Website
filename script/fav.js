@@ -75,3 +75,20 @@ function renderFavoriteBooks() {
 }
 
 renderFavoriteBooks();
+
+// HAMBURGER MENU FUNCTION 
+
+function onClickMenu() {
+    var menuIcon = document.getElementById("menu");
+    var nav = document.querySelector("nav");
+
+    menuIcon.classList.toggle("bx-menu");
+    menuIcon.classList.toggle("bx-x");
+
+    nav.classList.toggle("active");
+
+    var navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+        link.classList.toggle("transformed");
+    });
+}
