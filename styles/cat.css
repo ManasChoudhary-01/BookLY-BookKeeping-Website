@@ -36,10 +36,11 @@ body {
 
 .med3 {
     font-family: 'Poppins:wght@400', sans-serif;
-    font-size: 2vw;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     gap: 10px;
+    text-align: center;
 }
 
 .content-4 {
@@ -63,7 +64,7 @@ body {
 .med4 {
     position: relative;
     font-family: 'Oswald:wght@400', sans-serif;
-    font-size: 2vw;
+    font-size: 2.5rem;
     color: #000;
     cursor: pointer;
 }
