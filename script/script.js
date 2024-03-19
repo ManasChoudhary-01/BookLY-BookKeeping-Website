@@ -84,3 +84,36 @@ fetch("https://book-finder1.p.rapidapi.com/api/search", {
     .catch(error => {
         console.error('Error:', error);
     });  
+
+// RAED MORE AND READ LESS BUTTON 
+
+function toggleSummary(btnId) {
+    const card = document.getElementById(btnId).closest('.card');
+    const title = card.querySelectorAll('.book-title');
+    const author = card.querySelectorAll('.book-author');
+    const series = card.querySelectorAll('.book-series');
+    const summary = card.querySelectorAll('.book-summary');
+    const fullSummary = card.querySelector('.fullbook-summary');
+    const toggleButton = card.querySelector(`#${btnId}`);
+
+    title.forEach(titleh => {
+        titleh.classList.toggle('hidden');
+    });
+    author.forEach(authorh => {
+        authorh.classList.toggle('hidden');
+    });
+    series.forEach(seriesh => {
+        seriesh.classList.toggle('hidden');
+    });
+    summary.forEach(summaryh => {
+        summaryh.classList.toggle('hidden');
+    });
+
+    fullSummary.classList.toggle('hidden');
+  
+    if (fullSummary.classList.contains('hidden')) {
+        toggleButton.innerText = 'Read More';
+    } else {
+        toggleButton.innerText = 'Read Less';
+    }
+}
