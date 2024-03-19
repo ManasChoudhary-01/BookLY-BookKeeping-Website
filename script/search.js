@@ -71,10 +71,16 @@ submitButton.addEventListener('click', () => {
             bookBodyElement.appendChild(addFavButton);
 
             addFavButton.addEventListener('click', () => {
-                const favoriteBook = {coverArtUrl1, title, author, series, booktype };
-                favoriteBooks.push(favoriteBook);
-                localStorage.setItem('favoriteBooks', JSON.stringify(favoriteBooks));
-                alert('Book added to favorites! ❤️');
+                const isBookInFavorites = favoriteBooks.some(book => book.title === title);
+                if (isBookInFavorites) {
+                    alert('Book is already in favorites!');
+                } else {
+                    const favoriteBook = { coverArtUrl1, title, author, series, booktype };
+                    favoriteBooks.push(favoriteBook);
+                    localStorage.setItem('favoriteBooks', JSON.stringify(favoriteBooks));
+                    addFavButton.textContent = 'Added to ❤️';
+                    alert('Book added to favorites! ❤️');
+                }
             });
 
         }
