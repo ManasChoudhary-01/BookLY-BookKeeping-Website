@@ -325,8 +325,15 @@ section {
   font-family: 'Poppins:wght@200', sans-serif;
   text-align: center;
 }
+.fullbook-summary {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px 10px;
+  font-family: 'Poppins:wght@200', sans-serif;
+  text-align: center;
+}
 
-#fav-btn {
+.card button {
   color: #fff;
   background: #14A1E8;
   padding: 10px 20px;
@@ -338,9 +345,8 @@ section {
   font-size: 16px;
 }
 
-#fav-btn:hover {
-  background-color: transparent;
-  border: 2px solid #14A1E8;
+.hidden {
+  display: none;
 }
 
 .card:hover .card-body {
@@ -573,7 +579,7 @@ footer p {
   html {
     font-size: 57%;
   }
-  #fav-btn {
+  .card button {
     display: none;
   }
 }
