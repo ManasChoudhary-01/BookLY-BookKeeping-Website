@@ -19,6 +19,7 @@ submitButton.addEventListener('click', () => {
     .then(response => {
         const searchedBooksElement = document.querySelector('.searched-books');
         searchedBooksElement.innerHTML = ''; // Clear previous results
+        heading.textContent = `Showing results for "${searchTerm}"`;
 
         for (let i = 0; i < 24 && i < response.results.length; i++) {
             const title = response.results[i].title;
